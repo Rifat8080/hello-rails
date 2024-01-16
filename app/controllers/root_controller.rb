@@ -1,5 +1,5 @@
 class RootController < ApplicationController
   def index
-    @messages = Message.all
+    @message = Message.order("RANDOM()").first
   end
 end

@@ -1,17 +1,13 @@
-module.exports = {
-  presets: [
-    '@babel/preset-env',
-    '@babel/preset-react',
-  ],
-    module: {
-      rules: [
-        {
-          test: /\.(js|jsx)$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-          },
-        },
-      ],
-    },
+// babel.config.js
+
+module.exports = function (api) {
+  api.cache(true);
+
+  const presets = ['@babel/preset-env', '@babel/preset-react'];
+  const plugins = [];
+
+  return {
+    presets,
+    plugins,
   };
+};
