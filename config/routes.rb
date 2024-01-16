@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  root 'static#index'
-  get 'static/index'
-  get '/random_greeting', to: 'messages#random_greeting'
-  # other routes
+  root 'root#index'
+
+  namespace :api do
+    get 'greetings/random', to: 'greetings#random_greeting'
+  end
 end

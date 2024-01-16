@@ -8,14 +8,8 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 # db/seeds.rb
-
-# db/seeds.rb
-
-# Create Messages
-Message.create(content: "Hello!")
-Message.create(content: "Hi there!")
-Message.create(content: "Greetings!")
-Message.create(content: "Welcome!")
-Message.create(content: "Howdy!")
-
-puts "Seed data for messages successfully loaded."
+Message.create(content: "Hello, World!")
+Message.create(content: "Greetings from your app!")
+Message.create(content: "Have a great day!")
+Message.create(content: "Welcome to the application.")
+Message.create(content: "Hardcoded message number 5.")

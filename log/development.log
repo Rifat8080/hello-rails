@@ -1,384 +1,234 @@
-  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_development" ENCODING = 'unicode'[0m
-  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_test" ENCODING = 'unicode'[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6835469566630085430)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6835469566630085430)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_dev" ENCODING = 'unicode'[0m
-  [1m[35m (80.0ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_t" ENCODING = 'unicode'[0m
-  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
-  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1133989858983982665)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
-  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-01-16 05:56:17.805707', '2024-01-16 05:56:17.805709') RETURNING "key"[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(1133989858983982665)[0m
+Started GET "/" for 127.0.0.1 at 2024-01-16 18:59:43 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (115.5ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_d" ENCODING = 'unicode'[0m
-  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_t" ENCODING = 'unicode'[0m
-  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
-  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7807239895913558520)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
-  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-01-16 05:56:25.639930', '2024-01-16 05:56:25.639932') RETURNING "key"[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7807239895913558520)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (79.7ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_d2" ENCODING = 'unicode'[0m
-  [1m[35m (49.1ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_t2" ENCODING = 'unicode'[0m
-  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
-  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4393625872467702570)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
-  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-01-16 05:56:35.269382', '2024-01-16 05:56:35.269384') RETURNING "key"[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4393625872467702570)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4393625872467702570)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
-Migrating to CreateMessages (20240116055642)
-  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240116055642') RETURNING "version"[0m
-  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(4393625872467702570)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/" for 127.0.0.1 at 2024-01-16 12:01:39 +0600
-  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by StaticController#index as HTML
+Processing by RootController#index as HTML
   Rendering layout layouts/application.html.erb
-  Rendering static/index.html.erb within layouts/application
-  Rendered static/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2284)
-  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2410)
-Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 9994)
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 132.7ms | Allocations: 80514)
+Completed 200 OK in 153ms (Views: 141.5ms | ActiveRecord: 0.0ms | Allocations: 88146)
 
 
-  
-ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000000a618>):
-    1: <%= javascript_pack_tag 'App' %>
-    2: <h1>Static#index</h1>
-    3: <p>Find me in app/views/static/index.html.erb</p>
-  
-app/views/static/index.html.erb:1
-Started GET "/" for 127.0.0.1 at 2024-01-16 12:05:27 +0600
-  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by StaticController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering static/index.html.erb within layouts/application
-[Webpacker] Compiling...
-  Rendered static/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 3071)
-  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 3197)
-Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 7168)
-
-
-  
-ActionView::Template::Error (No such file or directory @ rb_sysopen - /Users/mdmahadihasanrifat/Desktop/hello-rails/bin/webpack):
-    1: <%= javascript_pack_tag 'App' %>
-    2: <h1>Static#index</h1>
-    3: <p>Find me in app/views/static/index.html.erb</p>
-  
-app/views/static/index.html.erb:1
-Started GET "/" for 127.0.0.1 at 2024-01-16 12:06:52 +0600
-  [1m[36mActiveRecord::SchemaMigration Load (12.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by StaticController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering static/index.html.erb within layouts/application
-[Webpacker] Compiling...
-  Rendered static/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 3072)
-  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3198)
-Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 7169)
-
-
-  
-ActionView::Template::Error (No such file or directory @ rb_sysopen - /Users/mdmahadihasanrifat/Desktop/hello-rails/bin/webpack):
-    1: <%= javascript_pack_tag 'App' %>
-    2: 
-    3: <h1>Static#index</h1>
-    4: <p>Find me in app/views/static/index.html.erb</p>
-  
-app/views/static/index.html.erb:1
-Started GET "/" for 127.0.0.1 at 2024-01-16 12:07:52 +0600
-  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by StaticController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering static/index.html.erb within layouts/application
-[Webpacker] Compiling...
-  Rendered static/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 3072)
-  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3198)
-Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 7169)
-
-
-  
-ActionView::Template::Error (No such file or directory @ rb_sysopen - /Users/mdmahadihasanrifat/Desktop/hello-rails/bin/webpack):
-    1: <%= javascript_pack_tag 'App' %>
-    2: 
-    3: <h1>Static#index</h1>
-    4: <p>Find me in app/views/static/index.html.erb</p>
-  
-app/views/static/index.html.erb:1
-Started GET "/" for 127.0.0.1 at 2024-01-16 12:08:53 +0600
-  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by StaticController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering static/index.html.erb within layouts/application
-[Webpacker] Compiling...
-  Rendered static/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 3072)
-  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3198)
-Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 7169)
-
-
-  
-ActionView::Template::Error (No such file or directory @ rb_sysopen - /Users/mdmahadihasanrifat/Desktop/hello-rails/bin/webpack):
-    1: <%= javascript_pack_tag 'App' %>
-    2: 
-    3: <h1>Static#index</h1>
-    4: <p>Find me in app/views/static/index.html.erb</p>
-  
-app/views/static/index.html.erb:1
-Started GET "/" for 127.0.0.1 at 2024-01-16 12:13:48 +0600
-  [1m[36mActiveRecord::SchemaMigration Load (23.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by StaticController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering static/index.html.erb within layouts/application
-[Webpacker] Compiling...
-  Rendered static/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 3072)
-  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3198)
-Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 7169)
-
-
-  
-ActionView::Template::Error (No such file or directory @ rb_sysopen - /Users/mdmahadihasanrifat/Desktop/hello-rails/bin/webpack):
-    1: <%= javascript_pack_tag 'App' %>
-    2: 
-    3: <h1>Static#index</h1>
-    4: <p>Find me in app/views/static/index.html.erb</p>
-  
-app/views/static/index.html.erb:1
-Started GET "/" for 127.0.0.1 at 2024-01-16 12:14:31 +0600
-Processing by StaticController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering static/index.html.erb within layouts/application
-  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 97)
-  Rendered layout layouts/application.html.erb (Duration: 94.8ms | Allocations: 75917)
-Completed 200 OK in 96ms (Views: 95.5ms | ActiveRecord: 0.0ms | Allocations: 76833)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:15:35 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (2.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 500 Internal Server Error in 45ms (ActiveRecord: 8.3ms | Allocations: 13372)
-
-
-  
-NoMethodError (undefined method `content' for nil:NilClass):
-  
-app/controllers/messages_controller.rb:3:in `random_greeting'
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:16:32 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 1281)
-
-
-  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (191.2ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_d3" ENCODING = 'unicode'[0m
+  [1m[35m (74.0ms)[0m  [1m[35mCREATE DATABASE "hello_rails_react_production" ENCODING = 'unicode'[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(292943469297755220)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-01-16 13:07:19.590953', '2024-01-16 13:07:19.590955') RETURNING "key"[0m
+Migrating to CreateMessages (20240116130640)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mMessage Create (2.7ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Hello!"], ["created_at", "2024-01-16 06:19:39.881537"], ["updated_at", "2024-01-16 06:19:39.881537"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240116130640') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(292943469297755220)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:12:10 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 23127)
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 0.0ms | Allocations: 27152)
+
+
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:15:22 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 21869)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.0ms | Allocations: 25894)
+
+
+Started GET "/greeting" for 127.0.0.1 at 2024-01-16 19:15:29 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/greeting"):
+  
+Started GET "/greeting" for 127.0.0.1 at 2024-01-16 19:15:30 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/greeting"):
+  
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (2.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Hello, World!"], ["created_at", "2024-01-16 13:20:23.154488"], ["updated_at", "2024-01-16 13:20:23.154488"]]
   [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mMessage Create (4.2ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Hi there!"], ["created_at", "2024-01-16 06:19:39.885649"], ["updated_at", "2024-01-16 06:19:39.885649"]]
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Greetings from your app!"], ["created_at", "2024-01-16 13:20:23.158014"], ["updated_at", "2024-01-16 13:20:23.158014"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Have a great day!"], ["created_at", "2024-01-16 13:20:23.159298"], ["updated_at", "2024-01-16 13:20:23.159298"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Welcome to the application."], ["created_at", "2024-01-16 13:20:23.160513"], ["updated_at", "2024-01-16 13:20:23.160513"]]
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Greetings!"], ["created_at", "2024-01-16 06:19:39.890744"], ["updated_at", "2024-01-16 06:19:39.890744"]]
-  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Welcome!"], ["created_at", "2024-01-16 06:19:39.892396"], ["updated_at", "2024-01-16 06:19:39.892396"]]
-  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Howdy!"], ["created_at", "2024-01-16 06:19:39.893697"], ["updated_at", "2024-01-16 06:19:39.893697"]]
-  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:45 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (1.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 48ms (Views: 0.3ms | ActiveRecord: 11.6ms | Allocations: 12004)
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Hardcoded message number 5."], ["created_at", "2024-01-16 13:20:23.161712"], ["updated_at", "2024-01-16 13:20:23.161712"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:23:44 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 125.1ms | Allocations: 80731)
+Completed 200 OK in 138ms (Views: 129.1ms | ActiveRecord: 0.0ms | Allocations: 88360)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:48 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 586)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:23:46 +0600
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4500)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 4724)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:49 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 576)
+Started GET "/greeting" for 127.0.0.1 at 2024-01-16 19:23:50 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/greeting"):
+  
+Started GET "/greeting" for 127.0.0.1 at 2024-01-16 19:23:51 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/greeting"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:24:51 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 22017)
+Completed 200 OK in 50ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 26042)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:49 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 580)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:28:14 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 114.5ms | Allocations: 80666)
+Completed 200 OK in 128ms (Views: 118.2ms | ActiveRecord: 0.0ms | Allocations: 88295)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:50 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 590)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:28:18 +0600
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 4502)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 4727)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:50 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 576)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:28:18 +0600
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1977)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2200)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:51 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 576)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:28:18 +0600
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1956)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2179)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:51 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 576)
+Started GET "/greeting" for 127.0.0.1 at 2024-01-16 19:29:57 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/greeting"):
+  
+Started GET "/greeting" for 127.0.0.1 at 2024-01-16 19:29:58 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/greeting"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:35:52 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/root/index.html.erb:2
+  Rendered root/index.html.erb within layouts/application (Duration: 34.3ms | Allocations: 11357)
+  Rendered layout layouts/application.html.erb (Duration: 61.8ms | Allocations: 38145)
+Completed 200 OK in 95ms (Views: 48.9ms | ActiveRecord: 17.0ms | Allocations: 51145)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:52 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 576)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:35:55 +0600
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/root/index.html.erb:2
+  Rendered root/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2488)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.8ms | Allocations: 2733)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:52 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 576)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:35:55 +0600
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/root/index.html.erb:2
+  Rendered root/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 495)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2447)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms | Allocations: 2691)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:53 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 576)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:35:55 +0600
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/root/index.html.erb:2
+  Rendered root/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 495)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2459)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.2ms | Allocations: 2703)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:53 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 576)
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:35:56 +0600
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/root/index.html.erb:2
+  Rendered root/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 495)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2450)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 2694)
 
 
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:53 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:53 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:54 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:54 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:54 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:54 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:54 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:55 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:55 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:55 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:55 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:55 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:55 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 576)
-
-
-Started GET "/random_greeting" for 127.0.0.1 at 2024-01-16 12:19:56 +0600
-Processing by MessagesController#random_greeting as HTML
-  [1m[36mMessage Load (12.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY RANDOM() LIMIT $1[0m  [["LIMIT", 1]]
-  ↳ app/controllers/messages_controller.rb:3:in `random_greeting'
-Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 12.0ms | Allocations: 576)
+Started GET "/bin/dev" for 127.0.0.1 at 2024-01-16 19:36:24 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/bin/dev"):
+  
+Started GET "/greetings/random" for 127.0.0.1 at 2024-01-16 19:36:45 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/greetings/random"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-16 19:37:43 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  [1m[36mMessage Load (16.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/root/index.html.erb:2
+  Rendered root/index.html.erb within layouts/application (Duration: 82.1ms | Allocations: 11158)
+  Rendered layout layouts/application.html.erb (Duration: 97.8ms | Allocations: 32733)
+Completed 200 OK in 115ms (Views: 60.0ms | ActiveRecord: 41.7ms | Allocations: 42554)
 
 
