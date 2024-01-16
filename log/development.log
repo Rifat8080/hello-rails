@@ -232,3 +232,15 @@ Processing by RootController#index as HTML
 Completed 200 OK in 115ms (Views: 60.0ms | ActiveRecord: 41.7ms | Allocations: 42554)
 
 
+Started GET "/" for 127.0.0.1 at 2024-01-16 20:02:27 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/root/index.html.erb:2
+  Rendered root/index.html.erb within layouts/application (Duration: 42.2ms | Allocations: 11357)
+  Rendered layout layouts/application.html.erb (Duration: 147.0ms | Allocations: 90890)
+Completed 200 OK in 168ms (Views: 123.4ms | ActiveRecord: 26.9ms | Allocations: 107509)
+
+
