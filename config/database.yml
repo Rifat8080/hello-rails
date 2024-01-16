@@ -1,0 +1,24 @@
+# config/database.yml
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: hello_rails_react_d3
+  username: postgres
+  password: 6242
+
+test:
+  <<: *default
+  database: hello_rails_react_t3
+  username: postgres
+  password: 6242
+
+  production:
+  <<: *default
+  database: hello_rails_react_production
+  username: postgres
+  password: 6242
